@@ -3,7 +3,7 @@ import pandas as pd
 import math as ma
 from scipy import stats
 
-#File name {Tamil Nadu: S3, Chennai: S4}
+#File name {Tamil Nadu: S3 data.csv, Chennai: S4 data.csv}
 
 #To run the below code, enter the csv file name in place of 'File name', and remove the '#'.
 
