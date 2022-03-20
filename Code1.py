@@ -37,7 +37,7 @@ os.chdir('XXX')                 # Folder where the data is located
 def parser(s):
   return datetime.strptime(s,'%d-%m-%Y')
 
-data = pd.read_csv(r'S1.csv',parse_dates=[0],date_parser=parser,index_col=0)    # Use S2.csv inplace of S1.csv to run the code with Chennai data
+data = pd.read_csv(r'S1 data.csv',parse_dates=[0],date_parser=parser,index_col=0)    # Use S2.csv inplace of S1.csv to run the code with Chennai data
 
 # Lockdown dates
 
