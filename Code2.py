@@ -3,7 +3,11 @@ import pandas as pd
 import math as ma
 from scipy import stats
 
-data = pd.read_csv('chennaiMobility.csv', parse_dates=['date'], index_col=['date'])
+#File name {Tamil Nadu: S3, Chennai: S4}
+
+#To run the below code, enter the csv file name in place of 'File name', and remove the '#'.
+
+#data = pd.read_csv(File name, parse_dates=['date'], index_col=['date'])
 
 def Shapiro_Normality_test(array):
     
@@ -74,7 +78,7 @@ z2 = data.loc['2021-06-08':'2021-07-06']
 
 for category in data.columns:         #Looping through each category
     
-    #print(i, "\n")
+    #print(category, "\n")
     c1 = np.array(x[category].tolist())         #Complete Lockdown 1
     p1 = np.array(y[category].tolist())         #Partial Lockdown 1
     c = z[category].tolist()          
